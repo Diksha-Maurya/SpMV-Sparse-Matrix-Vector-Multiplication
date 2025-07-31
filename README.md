@@ -14,6 +14,10 @@ This project focuses on improving performance of SpMV—a core operation in HPC 
 
 ⚙️ Hybrid MPI + OpenMP Version – spmv-hybrid.c
 
+⚙️ CUDA Version – spmv-cuda.cu
+
+⚙️ Hybrid MPI + CUDA Version – spmv-mpi-cuda.cu
+
 📊 Dataset
 Used real-world sparse matrices from the SuiteSparse Matrix Collection:
 
