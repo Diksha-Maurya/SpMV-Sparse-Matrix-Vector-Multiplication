@@ -51,7 +51,6 @@ double benchmark_coo_spmv_cuda(coo_matrix *coo, float* x, float* y) {
     cudaMemcpy(d_cols, coo->cols, num_nonzeros * sizeof(int), cudaMemcpyHostToDevice);
     cudaMemcpy(d_vals, coo->vals, num_nonzeros * sizeof(float), cudaMemcpyHostToDevice);
     cudaMemcpy(d_x, x, coo->num_cols * sizeof(float), cudaMemcpyHostToDevice);
-
     cudaMemcpy(d_y, y, coo->num_rows * sizeof(float), cudaMemcpyHostToDevice);
 
     int blockSize = 256;
